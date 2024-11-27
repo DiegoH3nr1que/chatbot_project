@@ -33,9 +33,10 @@ O chatbot utiliza uma estrutura de árvore para organizar informações de perso
 
 ## 📦 Dependências
 
-NLTK: Utilizado para tokenização, stemming e taggers.
-Pandas: Para manipulação de tabelas e dados tabulares.
-Instale as dependências necessárias com:
+* NLTK: Utilizado para tokenização, stemming e taggers.
+* Pandas: Para manipulação de tabelas e dados tabulares.
+
+### Instale as dependências necessárias com:
 
 ```bash
 
@@ -47,16 +48,17 @@ pip install nltk pandas
 
 Segue um fluxograma para ilustrar o funcionamento do chatbot:
 
-Usuário faz uma pergunta.
+1° Usuário faz uma pergunta.
 
-A pergunta é processada (tokenização e stemming).
+2° A pergunta é processada (tokenização e stemming).
 
-Entidades e intenções são extraídas.
+3° Entidades e intenções são extraídas.
 
-O chatbot busca a resposta na árvore:
+4° O chatbot busca a resposta na árvore:
 
-Se a resposta for uma mensagem armazenada, é retornada ao usuário.
-Se a resposta for uma consulta dinâmica (f:consulta), uma função é acionada.
+* Se a resposta for uma mensagem armazenada, é retornada ao usuário.
+
+* Se a resposta for uma consulta dinâmica uma função é acionada.
 Resposta é retornada ao usuário.
 
 ``` mermaid
